@@ -19,7 +19,7 @@ const images = [
 export default function Gallery() {
   return (
     <section id="gallery" className="py-16 px-4 container mx-auto">
-      <h2 className="text-3xl font-bold mb-8 text-center">Gallery</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center" data-aos="fade-up">Gallery</h2>
 
       <Swiper
         modules={[Navigation, Pagination]}

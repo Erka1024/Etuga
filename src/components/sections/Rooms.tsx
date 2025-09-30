@@ -28,7 +28,7 @@ const rooms = [
 export default function Rooms() {
   return (
     <section id="rooms" className="py-16 px-4 container mx-auto">
-      <h2 className="text-3xl font-bold mb-8 text-center">Rooms & Rates</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center" data-aos="fade-up">Rooms & Rates</h2>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {rooms.map((room) => (
           <div key={room.name} className="rounded-lg overflow-hidden shadow">

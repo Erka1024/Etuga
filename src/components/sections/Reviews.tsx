@@ -6,7 +6,7 @@ const reviews = [
 export default function Reviews() {
   return (
     <section id="reviews" className="py-16 container mx-auto px-4 text-center">
-      <h2 className="text-3xl font-bold mb-8">Guest Reviews</h2>
+      <h2 className="text-3xl font-bold mb-8" data-aos="fade-up">Guest Reviews</h2>
       <div className="grid md:grid-cols-2 gap-6">
         {reviews.map((r) => (
           <blockquote
