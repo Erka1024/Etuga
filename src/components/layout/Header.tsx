@@ -52,7 +52,13 @@ export default function Header() {
       <div className="mx-auto container flex items-center justify-between px-4 py-3">
         {/* 🏡 Logo */}
         <Link href="/" className="lg:p-1 p-2">
-         <Image width={60} height={40}  alt="logo" src="/images/logo.png"/>
+        <Image
+  src="/images/logo.png"
+  width={45}
+  height={40}
+  alt="Logo"
+  priority
+/>
         </Link>
 
         {/* 🌐 Desktop Menu */}
