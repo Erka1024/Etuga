@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react"; // npm install lucide-react
-
+import Image from "next/image";
 const navItems = [
   { label: "Home", href: "#hero" },
   { label: "About", href: "#about" },
@@ -48,11 +48,11 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow z-50">
+    <header className="fixed top-0 left-0 w-full  rounded-b-3xl bg-black  shadow z-50">
       <div className="mx-auto container flex items-center justify-between px-4 py-3">
         {/* 🏡 Logo */}
-        <Link href="/" className="text-xl font-bold text-blue-600">
-          EO Guesthouse
+        <Link href="/" className="lg:p-1 p-2">
+         <Image width={60} height={40}  alt="logo" src="/images/logo.png"/>
         </Link>
 
         {/* 🌐 Desktop Menu */}
@@ -61,10 +61,10 @@ export default function Header() {
             <button
               key={item.href}
               onClick={() => handleNavClick(item.href)}
-              className={`font-medium transition-colors hover:text-blue-600 ${
+              className={`font-medium transition-colors hover:text-[#11dbce] ${
                 activeSection === item.href.replace("#", "")
-                  ? "text-blue-600"
-                  : "text-gray-700"
+                  ? "text-[#11dbce]"
+                  : "text-white"
               }`}
             >
               {item.label}
@@ -74,25 +74,25 @@ export default function Header() {
 
         {/* 📱 Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-800"
+          className="md:hidden text-[#11dbce] "
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          {menuOpen ? <X size={40} /> : <Menu size={40} />}
         </button>
       </div>
 
       {/* 📱 Mobile Menu Drawer */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t shadow">
+        <div className="md:hidden bg-black border-t shadow">
           <nav className="flex flex-col space-y-2 p-4">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className={`text-left py-2 text-gray-800 font-medium ${
+                className={`text-left py-2 text-text-[#11dbce] font-medium ${
                   activeSection === item.href.replace("#", "")
-                    ? "text-blue-600"
-                    : ""
+                    ? "text-[#11dbce] font-bold"
+                    : "text-white"
                 }`}
               >
                 {item.label}

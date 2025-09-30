@@ -9,20 +9,12 @@ import Reviews from "@/components/sections/Reviews";
 import Faq from "@/components/sections/Faq";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>EO Guesthouse – Cozy stay in Ulaanbaatar</title>
-        <meta
-          name="description"
-          content="Comfortable rooms, friendly staff, and great location in Ulaanbaatar. Perfect for travelers."
-        />
-        <meta property="og:title" content="EO Guesthouse" />
-        <meta property="og:description" content="Cozy stay in Ulaanbaatar" />
-        <meta property="og:image" content="/images/hero.jpg" />
-      </Head>
+      <Header/>
 
       <main className="bg-white text-gray-800">
         <Hero />

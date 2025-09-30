@@ -6,15 +6,23 @@ const rooms = [
     beds: "1 Queen",
     capacity: 2,
     price: "120,000₮ / night",
-    image: "/images/rooms/std-double.jpg",
+    image: "/images/rooms/single.jpg",
   },
   {
     name: "Twin Room",
     beds: "2 Single",
     capacity: 2,
     price: "130,000₮ / night",
+    image: "/images/rooms/double.jpg",
+  },
+    {
+    name: "Single Room",
+    beds: "3 Single",
+    capacity: 2,
+    price: "130,000₮ / night",
     image: "/images/rooms/twin.jpg",
   },
+
 ];
 
 export default function Rooms() {

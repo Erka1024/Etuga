@@ -6,7 +6,7 @@ const amenities = [
   { icon: "/icons/laundry.png", label: "Laundry" },
   { icon: "/icons/lunch.png", label: "Lunch & Dinner" },
   { icon: "/icons/tv.png", label: "Smart TV" },
-  { icon: "/icons/water.png", label: "Hot Shower" },
+  { icon: "/icons/take a bath.png", label: "Hot Shower" },
 ];
 
 export default function Amenities() {
@@ -29,7 +29,7 @@ export default function Amenities() {
                   className="object-contain"
                 />
               </div>
-              <p className="text-sm font-medium text-gray-700">{item.label}</p>
+              <p className="text-sm font-bold text-gray-700">{item.label}</p>
             </div>
           ))}
         </div>

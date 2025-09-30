@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-6 text-center">
+    <footer className="bg-black rounded-t-3xl text-white py-6 text-center">
       <p>© {new Date().getFullYear()} EO Guesthouse. All rights reserved.</p>
     </footer>
   );
