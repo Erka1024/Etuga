@@ -24,3 +24,47 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* --- Swiper Navigation --- */
+.custom-swiper .swiper-button-next,
+.custom-swiper .swiper-button-prev {
+  color: #10dbcf;            /* сумны өнгө */
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  border-radius: 9999px;     /* дугуй хэлбэртэй болгох */
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+
+.custom-swiper .swiper-button-next:hover,
+.custom-swiper .swiper-button-prev:hover {
+  background: #10dbcf;
+  color: #000;
+}
+
+.custom-swiper .swiper-button-next::after,
+.custom-swiper .swiper-button-prev::after {
+  font-size: 18px; /* сумны хэмжээ */
+  font-weight: bold;
+}
+
+/* --- Swiper Pagination --- */
+.custom-swiper .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.6;
+  width: 10px;
+  height: 10px;
+  transition: all 0.3s ease;
+}
+
+.custom-swiper .swiper-pagination-bullet:hover {
+  transform: scale(1.3);
+  background: #10dbcf;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  background: #10dbcf;
+  opacity: 1;
+  width: 14px;
+  height: 14px;
+}
