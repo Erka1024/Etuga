@@ -16,9 +16,10 @@ export default function Home() {
     <>
       <Header/>
 
-      <main className="bg-white text-gray-800">
+      <main className="bg-white text-gray-800 ">
         <Hero />
-        <About />
+       <div className="mx-10">
+         <About />
         <Rooms />
         <Amenities />
         <Gallery />
@@ -26,6 +27,7 @@ export default function Home() {
         <Reviews />
         <Faq />
         <Contact />
+       </div>
         <Footer />
       </main>
     </>
