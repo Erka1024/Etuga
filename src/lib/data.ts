@@ -20,6 +20,134 @@ export const ROOMS: Room[] = [
   },
   // ...
 ];
+export const branches = [
+  {
+    id: 1,
+    slug: "eo-guesthouse",
+    name: "EO Guesthouse",
+    address: "Downtown, Ulaanbaatar",
+    image: "/images/branches/eo-guesthouse.jpg",
+    rooms: [
+      {
+        name: "Standard Twin Room",
+        beds: "2 Single Beds",
+        price: "80,000₮ / night",
+        description: "Comfortable twin room with modern design, perfect for friends or colleagues traveling together.",
+        images: [
+          "/images/rooms/twin1.jpg",
+          "/images/rooms/twin2.jpg"
+        ]
+      },
+      {
+        name: "Deluxe Double Room",
+        beds: "1 Queen Bed",
+        price: "120,000₮ / night",
+        description: "Spacious deluxe room ideal for couples, featuring a large bed and a city view.",
+        images: [
+          "/images/rooms/deluxe1.jpg",
+          "/images/rooms/deluxe2.jpg"
+        ]
+      },
+      {
+        name: "Family Suite",
+        beds: "1 Queen + 2 Single Beds",
+        price: "180,000₮ / night",
+        description: "Perfect for families, with two bedrooms and a cozy living area.",
+        images: [
+          "/images/rooms/family1.jpg",
+          "/images/rooms/family2.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    id: 2,
+    slug: "city-center-inn",
+    name: "City Center Inn",
+    address: "Sukhbaatar District, Ulaanbaatar",
+    image: "/images/branches/city-center-inn.jpg",
+    rooms: [
+      {
+        name: "Economy Single Room",
+        beds: "1 Single Bed",
+        price: "60,000₮ / night",
+        description: "Compact room with all essentials for a comfortable stay.",
+        images: [
+          "/images/rooms/economy1.jpg",
+          "/images/rooms/economy2.jpg"
+        ]
+      },
+      {
+        name: "Business Double Room",
+        beds: "1 Queen Bed",
+        price: "100,000₮ / night",
+        description: "Ideal for business travelers, with workspace and fast Wi-Fi.",
+        images: [
+          "/images/rooms/business1.jpg",
+          "/images/rooms/business2.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    id: 3,
+    slug: "airport-lodge",
+    name: "Airport Lodge",
+    address: "Near Chinggis Khaan International Airport",
+    image: "/images/branches/airport-lodge.jpg",
+    rooms: [
+      {
+        name: "Transit Single",
+        beds: "1 Single Bed",
+        price: "50,000₮ / night",
+        description: "Simple and clean single room for short layovers.",
+        images: [
+          "/images/rooms/transit1.jpg",
+          "/images/rooms/transit2.jpg"
+        ]
+      },
+      {
+        name: "Premium Suite",
+        beds: "1 King Bed",
+        price: "150,000₮ / night",
+        description: "Luxury suite with lounge area, ideal for VIP guests or couples.",
+        images: [
+          "/images/rooms/premium1.jpg",
+          "/images/rooms/premium2.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    id: 4,
+    slug: "airport-lofffdge",
+    name: "Airport Lodge",
+    address: "Near Chinggis Khaan International Airport",
+    image: "/images/branches/airport-lodge.jpg",
+    rooms: [
+      {
+        name: "Transit Single",
+        beds: "1 Single Bed",
+        price: "50,000₮ / night",
+        description: "Simple and clean single room for short layovers.",
+        images: [
+          "/images/rooms/transit1.jpg",
+          "/images/rooms/transit2.jpg"
+        ]
+      },
+      {
+        name: "Premium Suite",
+        beds: "1 King Bed",
+        price: "150,000₮ / night",
+        description: "Luxury suite with lounge area, ideal for VIP guests or couples.",
+        images: [
+          "/images/rooms/premium1.jpg",
+          "/images/rooms/premium2.jpg"
+        ]
+      }
+    ]
+  }
+];
 
 export const AMENITIES: Amenity[] = [
   { icon: "wifi", label: "Free Wi-Fi" },

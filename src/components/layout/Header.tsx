@@ -48,30 +48,29 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full  rounded-b-3xl bg-black  shadow z-50">
+    <header className="fixed top-0 left-0 w-full  rounded-b-3xl bg-black   shadow z-50">
       <div className="mx-auto container flex items-center justify-between px-4 py-3">
         {/* 🏡 Logo */}
         <Link href="/" className="lg:p-1 p-2">
-        <Image
-  src="/images/logo.png"
-  width={45}
-  height={40}
-  alt="Logo"
-  priority
-/>
+          <Image
+            src="/images/logo.png"
+            width={45}
+            height={40}
+            alt="Logo"
+            priority
+          />
         </Link>
 
         {/* 🌐 Desktop Menu */}
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden md:flex space-x-6 ">
           {navItems.map((item) => (
             <button
               key={item.href}
               onClick={() => handleNavClick(item.href)}
-              className={`font-medium transition-colors hover:text-[#11dbce] ${
-                activeSection === item.href.replace("#", "")
+              className={`font-medium transition-colors hover:text-[#11dbce] ${activeSection === item.href.replace("#", "")
                   ? "text-[#11dbce]"
                   : "text-white"
-              }`}
+                }`}
             >
               {item.label}
             </button>
@@ -89,17 +88,16 @@ export default function Header() {
 
       {/* 📱 Mobile Menu Drawer */}
       {menuOpen && (
-        <div className="md:hidden bg-black border-t shadow">
-          <nav className="flex flex-col space-y-2 p-4">
+        <div className="md:hidden bg-black border-t shadow mx-10">
+          <nav className="flex flex-col space-y-2 p-10">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className={`text-left py-2 text-text-[#11dbce] font-medium ${
-                  activeSection === item.href.replace("#", "")
+                className={`text-left py-2 text-text-[#11dbce] font-medium ${activeSection === item.href.replace("#", "")
                     ? "text-[#11dbce] font-bold"
                     : "text-white"
-                }`}
+                  }`}
               >
                 {item.label}
               </button>

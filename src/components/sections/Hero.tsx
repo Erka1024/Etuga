@@ -12,10 +12,7 @@ export default function Hero() {
         <p className="mt-4 text-lg md:text-2xl" data-aos="fade-up"  data-aos-delay="200">Cozy stay in Ulaanbaatar</p>
         <div className="mt-6 flex justify-center gap-4">
           <a href="tel:+97699000000" data-aos="fade-right" data-aos-delay="500"  className="bg-black hover:bg-[#11dbce] hover:text-black px-5 py-3 rounded-lg font-semibold">Call Now</a>
-          <a href="https://maps.google.com/?q=Ulaanbaatar" data-aos="fade-left" data-aos-delay="500" target="_blank"
-             className="bg-white text-gray-900 hover:bg-gray-100 px-5 py-3 rounded-lg font-semibold">
-            Get Directions
-          </a>
+          
         </div>
       </div>
     </section>
